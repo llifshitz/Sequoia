@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>RequireJS i18n - Testing: IE only!</title>
+  <script type='text/javascript' src="js/jquery-1.7.2.js"></script>
+  <script type='text/javascript' src="js/jquery.i18n.properties-1.0.9.js"></script>
+  <script type='text/javascript' src='js/knockout-2.0.0.js'></script>
+  <script type='text/javascript' src="js/myModel.js"></script>
+
+</head>
+<body>
+<div id="langBox">
+  	      Language:
+  	      <select id="lang">
+  			<option value="browser" selected="">Indicated by the browser</option>
+  			<option value="en">en</option>
+  			<option value="fr_FR">fr_FR</option>
+  			<option value="pt_PT">pt_PT</option>
+  		  </select>
+  		  <span id="langBrowser"></span>
+  </div>
+<div>
+    Hello is: <strong data-bind="text: welcomeMsg1"></strong><br/>
+    World is: <strong data-bind="text: welcomeMsg2"></strong><br/>
+</div>
+<div>
+       Flag is:
+       <img data-bind="attr: {src: imageFlag1}"/>
+</div>
+</body>
+</html>
